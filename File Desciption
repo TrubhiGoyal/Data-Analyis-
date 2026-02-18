@@ -1,0 +1,172 @@
+📊 Payroll Data Analysis Using SQL
+📌 Project Overview
+
+This project focuses on analyzing a real-world payroll dataset using MySQL.
+The objective was to clean raw payroll data, transform financial fields into structured numeric formats, and generate meaningful business insights related to salary distribution, overtime trends, departmental spending, and employee cost structure.
+
+The project simulates a real-world freelance data analysis assignment in which raw business data is converted into actionable insights.
+
+🛠 Tools & Technologies Used
+
+MySQL Workbench
+
+SQL (Data Cleaning & Analysis)
+
+Microsoft Excel (Validation & Reporting)
+
+📂 Dataset Information
+
+Dataset Type: Payroll Data
+
+Total Columns: 35+
+
+Data Includes:
+
+Employee Information
+
+Department Details
+
+Salary Components
+
+Quarterly Payments
+
+Overtime Pay
+
+Benefit Costs
+
+🧹 Data Cleaning Process
+
+The dataset was first imported into a staging table:
+
+🔹 Step 1: Created Raw Table
+
+Created payroll_raw table
+
+Imported CSV dataset into MySQL
+
+Handled schema mismatches and column alignment issues
+
+🔹 Step 2: Data Transformation
+
+Created a clean analysis-ready table payroll_clean:
+
+Removed $ symbols and commas from salary fields
+
+Converted salary columns from TEXT to DECIMAL using:
+
+CAST()
+
+REPLACE()
+
+NULLIF()
+
+Handled empty and NULL values safely
+
+Preserved original raw dataset for integrity
+
+📊 Business Questions Answered
+💰 Salary Analysis
+
+What is the average annual salary?
+
+Which departments have the highest payroll cost?
+
+Top 10 highest paid employees
+
+Average salary by job class
+
+⏳ Overtime Analysis
+
+Total overtime expenditure
+
+Departments with highest overtime cost
+
+Overtime to base pay ratio
+
+Employees earning significant overtime
+
+📈 Yearly & Quarterly Trends
+
+Payroll trend by year
+
+Quarterly salary comparison (Q1–Q4)
+
+Department-level payroll growth
+
+🏢 Department-Level Insights
+
+Payroll burden per department
+
+Top payroll contributing departments
+
+Salary distribution by employment type
+
+📌 Key Insights
+
+A small number of departments account for a major portion of total payroll spending.
+
+Overtime contributes a significant percentage to total compensation in certain departments.
+
+Q4 shows higher payroll distribution compared to other quarters.
+
+Salary distribution varies significantly across job classes.
+
+Benefit costs form a measurable portion of overall employee expenditure.
+
+📊 KPI Metrics Generated
+
+Total Payroll Cost
+
+Average Employee Salary
+
+Total Overtime Cost
+
+Highest Paying Department
+
+Total Benefit Cost
+
+Total Employees
+
+🧠 SQL Concepts & Techniques Used
+
+CREATE TABLE
+
+LOAD DATA
+
+CAST()
+
+REPLACE()
+
+NULLIF()
+
+GROUP BY
+
+ORDER BY
+
+HAVING
+
+Aggregate Functions (SUM, AVG, MAX, MIN)
+
+Ranking & Advanced Filtering
+
+🚀 Future Enhancements
+
+Build an interactive Power BI dashboard
+
+Add salary trend forecasting
+
+Implement stored procedures for reporting
+
+Optimize performance using indexing
+
+Automate payroll KPI reporting
+
+🎯 Project Outcome
+
+This project demonstrates the ability to:
+
+✔ Handle real-world messy datasets
+✔ Perform financial data cleaning in SQL
+✔ Transform raw payroll data into structured insights
+✔ Answer business-driven analytical questions
+✔ Build a complete end-to-end SQL data analysis workflow
